@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app_lesson4.views import index
+from app_lesson4.views import index, top_sellers
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("lesson_4/",index)
+    path("lesson_4/",index, name="main-page"),
+    path("top-sellers/",top_sellers, name="topsellers")
 ]
