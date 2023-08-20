@@ -21,6 +21,6 @@ from app_lesson4.views import index, top_sellers
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("lesson_4/",index, name="main-page"),
+    path("",index, name="main-page"),
     path("top-sellers/",top_sellers, name="topsellers")
 ]
